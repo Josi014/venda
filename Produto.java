@@ -24,10 +24,10 @@ public class Produto{
         }
 
         Double calculaDesconto() {
-            return calculaDesconto(25.00);
+            return calculaDesconto(5.00);
         }
         Double calculaDesconto(Double novoDesconto) {
-            return this.preco - novoDesconto;
+            return (this.preco * novoDesconto/100);
         }
         public String toString(){
             return("Código:" + this.codigo + ",Nome do produto:" + this.nomeDoProduto + ",Preço:" + this.preco);
