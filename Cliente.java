@@ -37,8 +37,27 @@ public class Cliente {
         this.email = email;
     }
 
+    Cliente() {
+        this("Escreva seu cpf");
+    }
+    Cliente(String cpf){
+        this(cpf, "Qual é o seu nome?");
+    }
+    Cliente(String cpf, String nome) {
+        this(cpf, nome, "Qual é o seu email?");
+    }
+    Cliente(String cpf, String nome, String email) {
+        this(cpf, nome, email, "Qual é o seu endereço?" );
+    }
+    Cliente(String cpf, String nome, String email, String endereco) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.email = email;
+        this.endereco = endereco;
+    }
+
     public String toString(){
-        return("Cpf:" + this.cpf + ",Nome:" + this.nome + ",E-mail:" + this.email + ",Endereço:" + this.endereco);
+        return("Cpf: " + this.cpf +"," + " Nome: " + this.nome + "," + " E-mail: " + this.email +","+ " Endereço: " + this.endereco);
     }
 
 }

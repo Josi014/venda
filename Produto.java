@@ -27,9 +27,25 @@ public class Produto{
             return calculaDesconto(5.00);
         }
         Double calculaDesconto(Double novoDesconto) {
-            return (this.preco * novoDesconto/100);
+            return this.preco - (this.preco * novoDesconto/100);
         }
+
+        Produto() {
+            this(00);
+        }
+        Produto(int codigo){
+            this(codigo, "Nome do Produto");
+        }
+        Produto(int codigo, String nomeDoProduto) {
+            this(codigo, nomeDoProduto, 1.00);
+        }
+        Produto(int codigo, String nomeDoProduto, Double preco) {
+            this.codigo = codigo;
+            this.nomeDoProduto = nomeDoProduto;
+            this.preco = preco;
+        }
+
         public String toString(){
-            return("Código:" + this.codigo + ",Nome do produto:" + this.nomeDoProduto + ",Preço:" + this.preco);
+            return " Código: " + this.codigo +"," + " Nome do produto: " + this.nomeDoProduto +"," + " Preço: " + this.preco +","+ " Valor com desconto: " + this.calculaDesconto();
         }    
 }
