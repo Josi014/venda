@@ -46,6 +46,6 @@ public class Produto{
         }
 
         public String toString(){
-            return " Código: " + this.codigo +"," + " Nome do produto: " + this.nomeDoProduto +"," + " Preço: " + this.preco +","+ " Valor com desconto: " + this.calculaDesconto();
+            return " Código: " + this.codigo +"," + " Nome do produto: " + this.nomeDoProduto +"," + " Preço: R$" + this.preco +","+ " Valor com desconto: R$" + this.calculaDesconto();
         }    
 }
