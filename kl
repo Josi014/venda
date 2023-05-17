@@ -1,3 +1,0 @@
-public String toString(){
-        return("Cpf: " + this.cpf +"," + " Nome: " + this.nome + "," + " E-mail: " + this.email +","+ " Endereço: " + this.endereco);
-    }
