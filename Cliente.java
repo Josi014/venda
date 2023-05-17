@@ -1,4 +1,8 @@
+import java.util.Scanner;
+
 public class Cliente {
+
+    Scanner entrada = new Scanner(System.in);
 
     private String cpf;
     private String nome;
@@ -10,7 +14,8 @@ public class Cliente {
     }
 
     public void setCpf(String cpf) {
-        this.cpf = cpf;
+        this.cpf = cpf; 
+
     }
 
     public String getNome() {
@@ -55,9 +60,9 @@ public class Cliente {
         this.email = email;
         this.endereco = endereco;
     }
-
+    
     public String toString(){
         return("Cpf: " + this.cpf +"," + " Nome: " + this.nome + "," + " E-mail: " + this.email +","+ " Endereço: " + this.endereco);
     }
-
+    
 }
