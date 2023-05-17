@@ -7,10 +7,10 @@ public class Central {
         List<Cliente> cliente = new ArrayList<Cliente>();
 
         Cliente cliente01 = new Cliente();
-        cliente01.setCpf("057.960.420-92");
-        cliente01.setNome("Josiéli de Souza de Ramos");
-        cliente01.setEmail("josielisouzaderamos@gmail.com");
-        cliente01.setEndereco("Avenida Miguelzinho Lima 597, casa 13");
+        cliente01.setCpf("124.346.720-84");
+        cliente01.setNome("Rodrigo Almeida");
+        cliente01.setEmail("orodri@gmail.com");
+        cliente01.setEndereco("Avenida quinzé");
         cliente.add(cliente01);
 
         List<Produto> produtos = new ArrayList<Produto>();
